@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import TaskList from "./components/TaskList.vue";
 </script>
 
 <template>
   <div>
-    <h1 class="text-orange-400">App.vue</h1>
+    <h1 class="text-orange-400">TODO LIST</h1>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <TaskList msg="Vite + Vue" />
 </template>
 
 <style scoped>
