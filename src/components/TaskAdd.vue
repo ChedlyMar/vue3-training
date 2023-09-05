@@ -13,8 +13,6 @@ const addTask = () => {
 };
 </script>
 
-
-
 <template>
   <section>
     <h5>Add Task</h5>

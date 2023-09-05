@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { taskList } = defineProps<{ taskList: string[] }>();
+defineProps<{ taskList: string[] }>();
 
 defineEmits<{
   selectTask: [task: string];
