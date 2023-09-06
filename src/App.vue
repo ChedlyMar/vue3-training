@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
+import AddTask from "./components/AddTask.vue";
+import ListTask from "./components/ListTask.vue";
+import DetailTask from "./components/DetailTask.vue";
 </script>
 
 <template>
@@ -7,6 +10,9 @@ import HelloWorld from "./components/HelloWorld.vue";
     <h1 class="text-orange-400">App.vue</h1>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <add-task />
+  <list-task />
+  <detail-task></detail-task>
 </template>
 
 <style scoped>
