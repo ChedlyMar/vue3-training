@@ -1,12 +1,16 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import DetailPost from "./components/DetailsPost.vue";
+import AddPost from "./components/AddPost.vue";
+import ListPost from "./components/ListPost.vue";
 </script>
 
 <template>
   <div>
     <h1 class="text-orange-400">App.vue</h1>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <AddPost />
+  <ListPost />
+  <DetailPost />
 </template>
 
 <style scoped>
