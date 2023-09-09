@@ -8,9 +8,9 @@ import ListPost from "./components/ListPost.vue";
   <div>
     <h1 class="text-orange-400">App.vue</h1>
   </div>
+  <DetailPost />
   <AddPost />
   <ListPost />
-  <DetailPost />
 </template>
 
 <style scoped>
