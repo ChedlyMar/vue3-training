@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import AddPost from "./components/AddPost.vue";
-import EditPost from "./components/EditPost.vue";
 import ListPost from "./components/ListPost.vue";
 </script>
 
 <template>
   <div>
-    <h1 class="text-orange-400 text-4xl">App.vue</h1>
+    <h1 class="text-orange-400">App.vue</h1>
   </div>
-  <add-post />
-  <edit-post />
-  <list-post />
+  <AddPost />
+  <ListPost />
+  <router-link to="/">Post List</router-link>
+  <router-link to="/add">Add post</router-link>
+  <router-view></router-view>
 </template>
 
 <style scoped>
