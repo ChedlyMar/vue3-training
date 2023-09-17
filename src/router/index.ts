@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 import ListPost from "../components/ListPost.vue";
 import AddPost from "../components/AddPost.vue";
+import DetailPost from "../components/EditPost.vue";
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: "/add",
     name: "Add Post",
     component: AddPost,
+  },
+  {
+    path: "/datail/:id",
+    component: DetailPost,
+    name: "Detail Post",
   },
 ];
 
