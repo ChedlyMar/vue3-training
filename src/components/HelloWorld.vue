@@ -1,22 +1,18 @@
 <script setup lang="ts">
-// const {msg} = defineProps({
-//   msg: { type: String, required: true }
-// })
+import { useCounterStore } from "../store/couter";
 
-const { msg } = defineProps<{
-  msg: string;
-  bar?: number;
-}>();
-
-// defineProps<{ msg: string }>();
-// const props = defineProps({
-//   msg: String,
-
-// })
+const counterStore = useCounterStore();
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>Counter</h1>
+  <h2>{{ counterStore.counter }}</h2>
+  <button @click="counterStore.increment">+</button>
+  <button @click="counterStore.decrement">-</button>
+  <h2 v-if="counterStore.eaven">is eaven</h2>
+  <h2 v-else>is odd</h2>
+
+  <h2>{{ counterStore.eaven ? "is eaven" : "is odd" }}</h2>
 </template>
 
 <style scoped>
