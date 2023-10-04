@@ -1,22 +1,12 @@
 <script setup lang="ts">
-// const {msg} = defineProps({
-//   msg: { type: String, required: true }
-// })
-
-const { msg } = defineProps<{
-  msg: string;
-  bar?: number;
-}>();
-
-// defineProps<{ msg: string }>();
-// const props = defineProps({
-//   msg: String,
-
-// })
+import { useCouterStore } from "../store/counter";
+const counter = useCouterStore();
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>app</h1>
+  <button @click="counter.fetchTodo">get todos</button>
+  <div v-for="todo in counter.todos" :key="todo.id">{{ todo.title }}</div>
 </template>
 
 <style scoped>
